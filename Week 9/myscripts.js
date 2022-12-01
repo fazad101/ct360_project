@@ -32,15 +32,15 @@ burger.addEventListener("click", () =>
 //   document.querySelector("#work div h3").classList.toggle("rotate-class")
 // );
 
-work.addEventListener("mouseover", (e) => {
-  console.log(e.target.classList[0]);
-  if (e.target.classList[0] === "work") {
-    e.target.querySelector("h3").classList.toggle("rotate-class");
-  }
-});
+// work.addEventListener("mouseover", (e) => {
+//   console.log(e.target.classList[0]);
+//   if (e.target.classList[0] === "work") {
+//     e.target.querySelector("h3").classList.toggle("rotate-class");
+//   }
+// });
 
-work.addEventListener("mouseout", (e) => {
-  if (e.target.classList[0] === "work") {
-    e.target.querySelector("h3").classList.toggle("rotate-class");
-  }
-});
+// work.addEventListener("mouseout", (e) => {
+//   if (e.target.classList[0] === "work") {
+//     e.target.querySelector("h3").classList.toggle("rotate-class");
+//   }
+// });
