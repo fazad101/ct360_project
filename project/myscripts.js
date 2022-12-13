@@ -19,7 +19,7 @@ burger.addEventListener("click", () =>
 //            SCROLL EVENT
 window.onscroll = () => {
   let top = window.pageYOffset;
-  if (top > 200) {
+  if (top > 100) {
     intro.classList.add("hidden");
   } else {
     intro.classList.remove("hidden");
