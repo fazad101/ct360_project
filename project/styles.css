@@ -125,6 +125,7 @@ nav > a {
 /* Intro Section ################################################################################################################################################### */
 
 .intro {
+  width: 100%;
   border-radius: 30px;
   /* height: 400px; */
   margin: 50px 200px;
@@ -146,6 +147,7 @@ nav > a {
 /* Down arrow Section ################################################################################################################################################### */
 
 .down-arrow {
+  display: block;
   width: 90px;
   height: 90px;
   border: 3px solid white;
@@ -198,15 +200,14 @@ nav > a {
 }
 
 .div-containers div {
-  width: 100%;
   height: var(--divHeight);
   margin: 0 10px 10px 10px;
   border: 2px solid var(--lightBlue);
   border-radius: 10px;
   position: relative;
   display: flex;
-  justify-content: center;
-  transition: width 1s ease-in-out;
+  flex: 1; /* width: 100%; */
+  transition: all 1s ease-in-out;
 }
 
 .div-containers div h3 {
@@ -262,7 +263,7 @@ nav > a {
 }
 
 .div-containers div:hover {
-  width: 400%;
+  flex: 4;  /* width: 400%; */
 }
 
 .div-containers div:hover h3 {
@@ -354,4 +355,6 @@ footer .fast-travel {
 /* JS added classes ############################################################################################################################################# */
 .hidden {
   opacity: 0;
+  transform: translateY(-50%);
+  transition: all 1s ease-in-out;
 }
